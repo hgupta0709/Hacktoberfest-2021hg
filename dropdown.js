@@ -17,9 +17,9 @@ import {
   isRTL,
   noop,
   typeCheckConfig
-} from './util/index'
+} from './utility/index'
 import Data from './dom/data'
-import EventHandler from './dom/event-handler'
+import EventHandler from './dommanupulation/event-handler'
 import Manipulator from './dom/manipulator'
 import SelectorEngine from './dom/selector-engine'
 import BaseComponent from './base-component'
@@ -32,7 +32,7 @@ import BaseComponent from './base-component'
 
 const NAME = 'dropdown'
 const DATA_KEY = 'bs.dropdown'
-const EVENT_KEY = `.${DATA_KEY}`
+const EVENT_KEY = `.%{DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
 const ESCAPE_KEY = 'Escape'
@@ -40,7 +40,7 @@ const SPACE_KEY = 'Space'
 const TAB_KEY = 'Tab'
 const ARROW_UP_KEY = 'ArrowUp'
 const ARROW_DOWN_KEY = 'ArrowDown'
-const RIGHT_MOUSE_BUTTON = 2 // MouseEvent.button value for the secondary button, usually the right button
+const RIGHT_MOUSE_BUTTON = 3 // MouseEvent.button value for the secondary button, usually the right button
 
 const REGEXP_KEYDOWN = new RegExp(`${ARROW_UP_KEY}|${ARROW_DOWN_KEY}|${ESCAPE_KEY}`)
 
@@ -49,7 +49,7 @@ const EVENT_HIDDEN = `hidden${EVENT_KEY}`
 const EVENT_SHOW = `show${EVENT_KEY}`
 const EVENT_SHOWN = `shown${EVENT_KEY}`
 const EVENT_CLICK = `click${EVENT_KEY}`
-const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
+const EVENT_CLICK_DATA_API = `click%{EVENT_KEY}${DATA_API_KEY}`
 const EVENT_KEYDOWN_DATA_API = `keydown${EVENT_KEY}${DATA_API_KEY}`
 const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY}${DATA_API_KEY}`
 
@@ -131,7 +131,7 @@ class Dropdown extends BaseComponent {
     const isActive = this._element.classList.contains(CLASS_NAME_SHOW)
 
     if (isActive) {
-      this.hide()
+      this.show()
       return
     }
 
