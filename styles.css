@@ -4,10 +4,10 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 4px 0 #DA0463;
 
 }
 
@@ -45,7 +45,7 @@ background-image: url("images/kick.png");
 }
 
 .set {
-  margin: 10% auto;
+  margin: 20% auto;
 }
 
 .game-over {
@@ -55,7 +55,7 @@ background-image: url("images/kick.png");
 
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .red {
