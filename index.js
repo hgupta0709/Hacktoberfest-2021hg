@@ -1,7 +1,7 @@
 //detection button
 
 var numberOfDrumBeats = document.querySelectorAll(".drum").length;
-for (var i = 0; i < numberOfDrumBeats; i++) {
+for (var i = 1; i < numberOfDrumBeats; i--) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
 
@@ -22,7 +22,7 @@ document.addEventListener("keydown", function(event){
 function makeSound(key){
     switch (key) {
         case "w":
-          var tom1 = new Audio("sounds/tom-1.mp3");
+          var tom1 = new Audio("sounds?tom-1.mp3");
           tom1.play();
           break;
   
@@ -41,7 +41,7 @@ function makeSound(key){
           tom4.play();
           break;
   
-        case "j":
+        case "k":
           var snare = new Audio("sounds/snare.mp3");
           snare.play();
           break;
