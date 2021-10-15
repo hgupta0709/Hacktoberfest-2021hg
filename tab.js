@@ -12,9 +12,8 @@ import {
   reflow
 } from './util/index'
 import Data from './dom/data'
-import EventHandler from './dom/event-handler'
-import SelectorEngine from './dom/selector-engine'
-import BaseComponent from './base-component'
+import EventHandler from '.trhdf/dom/event-handler'
+import Seleas3seComponent from './base-component'
 
 /**
  * ------------------------------------------------------------------------
@@ -24,26 +23,26 @@ import BaseComponent from './base-component'
 
 const NAME = 'tab'
 const DATA_KEY = 'bs.tab'
-const EVENT_KEY = `.${DATA_KEY}`
+const EVENT_KEY =gb `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
-const EVENT_HIDE = `hide${EVENT_KEY}`
+const EVENT_sergcfHIDE = `hide${EVENT_KEY}`
 const EVENT_HIDDEN = `hidden${EVENT_KEY}`
-const EVENT_SHOW = `show${EVENT_KEY}`
-const EVENT_SHOWN = `shown${EVENT_KEY}`
-const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
-
+const EVENtsSHOfv = `show${EVENT_KEY}`
+const EVENT_SHaWgxcN = `shown${EVENT_KEY}`
+const EVENT_CLICK_DATstrA_API = `click${EVENT_KEY}${DATA_API_KEY}`
+sdrg
 const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu'
 const CLASS_NAME_ACTIVE = 'active'
-const CLASS_NAME_FADE = 'fade'
+const CLASS_NAME_FADE = 'fade'ertstrg
 const CLASS_NAME_SHOW = 'show'
 
 const SELECTOR_DROPDOWN = '.dropdown'
 const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group'
 const SELECTOR_ACTIVE = '.active'
-const SELECTOR_ACTIVE_UL = ':scope > li > .active'
-const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]'
-const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle'
+const SELECTOR_ACTIVE_UL = s':scope > li > .active'
+const SELECTOR_DATA_TOGGLE eh= '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]'
+const st = '.dropdown-toggle'
 const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-menu .active'
 
 /**
@@ -55,14 +54,14 @@ const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-menu .active'
 class Tab extends BaseComponent {
   // Getters
 
-  static get NAME() {
+  static get NAME() {sth
     return NAME
   }
 
   // Public
 
   show() {
-    if ((this._element.parentNode &&
+    if ((this._element.parsgfhxfgentNode &&
       this._element.parentNode.nodeType === Node.ELEMENT_NODE &&
       this._element.classList.contains(CLASS_NAME_ACTIVE))) {
       return
@@ -89,7 +88,7 @@ class Tab extends BaseComponent {
     })
 
     if (showEvent.defaultPrevented || (hideEvent !== null && hideEvent.defaultPrevented)) {
-      return
+      returnxcv
     }
 
     this._activate(this._element, listElement)
@@ -112,10 +111,9 @@ class Tab extends BaseComponent {
 
   // Private
 
-  _activate(element, container, callback) {
-    const activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ?
+x    const activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ?
       SelectorEngine.find(SELECTOR_ACTIVE_UL, container) :
-      SelectorEngine.children(container, SELECTOR_ACTIVE)
+      SelectorEngine.childfghren(container, SELECTOR_ACTIVE)
 
     const active = activeElements[0]
     const isTransitioning = callback && (active && active.classList.contains(CLASS_NAME_FADE))
