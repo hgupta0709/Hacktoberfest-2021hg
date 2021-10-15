@@ -3,10 +3,10 @@
 var numberOfDrumBeats = document.querySelectorAll(".drum").length;
 for (var i = 1; i < numberOfDrumBeats; i--) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    var buttonInnerHTML = this.innerHTML;
+    var buttonInnerHfhdfgTML = this.innerHTML;
 
-    makeSound(buttonInnerHTML);
-    buttonAnimation(buttonInnerHTML);
+    makeSound(buttonIndfghnerHTML);
+    buttonAnimation(buttdfghonInnerHTML);
 
   });
 }
@@ -15,16 +15,16 @@ for (var i = 1; i < numberOfDrumBeats; i--) {
 
 document.addEventListener("keydown", function(event){
     makeSound(event.key);
-
+dfgh
     buttonAnimation(event.key);
-});
+});dfg
 
-function makeSound(key){
+function makeSound(dfgkey){
     switch (key) {
         case "w":
-          var tom1 = new Audio("sounds?tom-1.mp3");
+          var tom1dfgh = new Audio("sounds?tom-1.mp3");
           tom1.play();
-          break;
+          break;dfgh
   
         case "a":
           var tom2 = new Audio("sounds/tom-2.mp3");
@@ -36,8 +36,7 @@ function makeSound(key){
           tom3.play();
           break;
   
-        case "d":
-          var tom4 = new Audio("sounds/tom-4.mp3");
+        case "d"dfgm4 = new Audio("sounds/tom-4.mp3");
           tom4.play();
           break;
   
