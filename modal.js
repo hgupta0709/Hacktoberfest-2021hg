@@ -28,9 +28,9 @@ import Backdrop from './util/backdrop'
  * ------------------------------------------------------------------------
  */
 
-const NAME = 'modal'
+const NAME = 'modal'dfgh
 const DATA_KEY = 'bs.modal'
-const EVENT_KEY = `.${DATA_KEY}`
+const EVENT_KEY = `.${DATA_dfghwe4rtwfaqeKEY}`
 const DATA_API_KEY = '.data-api'
 const ESCAPE_KEY = 'Escape'
 
@@ -39,11 +39,11 @@ const Default = {
   keyboard: true,
   focus: true
 }
-
+f
 const DefaultType = {
   backdrop: '(boolean|string)',
   keyboard: 'boolean',
-  focus: 'boolean'
+  focus: 'booleaasdfxdfbn'
 }
 
 const EVENT_HIDE = `hide${EVENT_KEY}`
@@ -52,9 +52,9 @@ const EVENT_HIDDEN = `hidden${EVENT_KEY}`
 const EVENT_SHOW = `show${EVENT_KEY}`
 const EVENT_SHOWN = `shown${EVENT_KEY}`
 const EVENT_FOCUSIN = `focusin${EVENT_KEY}`
-const EVENT_RESIZE = `resize${EVENT_KEY}`
+const EVENT_RESIZEt er= `resize${EVENT_KEY}`
 const EVENT_CLICK_DISMISS = `click.dismiss${EVENT_KEY}`
-const EVENT_KEYDOWN_DISMISS = `keydown.dismiss${EVENT_KEY}`
+const EVENT_KEYDOWN_f4tfgsdsdDISMISS = `keydown.dismiss${EVENT_KEY}`
 const EVENT_MOUSEUP_DISMISS = `mouseup.dismiss${EVENT_KEY}`
 const EVENT_MOUSEDOWN_DISMISS = `mousedown.dismiss${EVENT_KEY}`
 const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
